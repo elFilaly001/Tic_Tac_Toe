@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #table{
+            margin: 10px ;
+        }
+    </style>
+    <div>
+        <i class="fa-solid fa-xmark" style="font-size: 23px;margin-top:5px; color: red" ></i> : <span id="Xscore" style="font-size: 23px; margin-right: 10px;">0</span>
+        <i class="fa-solid fa-o" style="font-size: 20px;margin-top: 5 px;color:blue" ></i> : <span id="Oscore" style="font-size: 23px;">0</span>
+        <button onclick=resetPage()> Reset Game </button>
+        <button onclick=resetScore()> Reset Score </button>
+
+    </div>
+    
+    <div id="table"></div>
+</body>
+<footer>
+    <script src="rules.js"></script>
+</footer>
+</html>
