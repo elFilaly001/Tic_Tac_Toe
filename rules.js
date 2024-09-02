@@ -163,5 +163,5 @@ function resetPage() {
 function resetScore() {
     localStorage.setItem('Xscore', 0);
     localStorage.setItem('Oscore', 0);
-    initializeScore
+    initializeScore()
 }
