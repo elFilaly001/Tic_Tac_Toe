@@ -7,3 +7,10 @@
 <p>CSS</p>
 <p>JS</p>
 <p>AWS EC2 (hosting)</p>
+<h5>Winning logic</h5>
+<p>For the function of winning i created the board not as X,Y but as IDs i basically track the id of the last square clicked and check the surrounding squares that has the same turn with also a count and creating a count of it equals 5 then its a win</p>
+<h5>improvments to make</h5>
+<p>i am planning to improve the UI/UX experience also making it multi-player</p>
+
+
+

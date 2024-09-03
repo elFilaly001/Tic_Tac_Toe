@@ -4,7 +4,7 @@ let square
 let grid = 20
 
 function createGrid(a){
-    table.setAttribute("style" ,` width: calc(0.85 * ${a}cm); display: grid ; grid-template-columns: repeat(${a},0.6cm);gap: 3px 0;`)
+    table.setAttribute("style" ,` width: auto; display: grid ; grid-template-columns: repeat(${a},0.6cm);gap: 3px 0;`)
     for(let i=1 ; i<=a*a ; i++){
         square = `<div data-sq="${i}" style="width: 0.5cm ;height: 0.5cm; border-radius: 3px ; border: 1px solid;" onclick=put(event);></div>`
         table.innerHTML+=square
@@ -154,11 +154,11 @@ function initializeScore() {
 }
 
 function resetPage() {
-        table.innerHTML = ''; 
-        sqTocheck = []
-        Xsq= []
-        Osq= [] 
-        createGrid(grid);  
+    sqTocheck = []
+    Xsq= []
+    Osq= [] 
+    table.innerHTML = '' 
+    createGrid(grid);  
 }
 function resetScore() {
     localStorage.setItem('Xscore', 0);
